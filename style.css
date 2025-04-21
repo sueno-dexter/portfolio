@@ -1,0 +1,1176 @@
+/* General Styling */
+body {
+    font-family: 'Space Mono', monospace; /* Futuristic monospace font */
+    background: radial-gradient(circle, #111, #000); /* Deep space gradient */
+    color: #fff;
+    margin: 0;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease;
+    line-height: 1.6; /* Improved readability */
+    text-align: center; /* Center-aligned text */
+  }
+  
+  /* Typography */
+  h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif; /* Bold, futuristic headings */
+    text-align: center;
+    margin: 2rem 0;
+    text-shadow: 0 0 10px #0ff; /* Subtle neon glow */
+  }
+  
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 1.8rem; }
+  
+  /* Navigation */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: 'Press Start 2P', monospace; /* Futuristic pixel font */
+    font-size: 2.5rem;
+    color: #ff0000; /* Red, like a warning */
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff8000; /* Intense red glow with orange */
+  }
+  
+  .symbol {
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #0ff; /* Neon green on hover */
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 4rem 0;
+  }
+  
+  .hero-bouncing.text h1 {
+    animation: bounce 1s linear infinite;
+    font-size: 3.5rem;
+  }
+  
+  .hero-image {
+    display: flex; /* Use flexbox for easy spacing */
+    justify-content: space-between; /* Space images evenly */
+    width: 100%; /* Full width */
+    margin-top: 2rem;
+  }
+  
+  .moving-image {
+    animation: moveImage 5s linear infinite; /* Adjust duration and timing as needed */
+    width: 300px;
+    height: auto;
+  }
+  
+  .moving-image-left {
+    animation-direction: alternate-reverse; /* Move left */
+  }
+  
+  .moving-image-right {
+    animation-direction: alternate; /* Move right */
+  }
+  
+  /* About Section */
+  .about {
+    padding: 4rem 0;
+  }
+  
+  .sliding-text {
+    animation: slideText 3s linear infinite; /* Adjust duration and timing as needed */
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .about-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .about-image img {
+    animation: bounce 1s linear infinite; /* Adjust duration and timing as needed */
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image a circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.6s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Resume Section */
+  .resume {
+    padding: 4rem 0;
+  }
+  
+  .resume-item {
+    margin-bottom: 2rem;
+  }
+  
+  .resume-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-details ul {
+    list-style: disc;
+    padding-left: 2rem;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background: linear-gradient(to bottom, #111, #000); /* Deep space gradient */
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .contact h2 {
+    font-family: 'Orbitron', sans-serif; /* Bold, futuristic heading */
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #0ff; /* Subtle neon glow */
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact label {
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .contact input,
+  .contact textarea {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+  
+  .contact button {
+    background-color: #0ff; /* Futuristic neon green */
+    color: #181818;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+  }
+  
+  .contact button:hover {
+    background-color: #0f0; /* Darker green on hover */
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0ff; /* Neon green */
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .social-icons a:hover {
+    background-color: #0f0; /* Darker green on hover */
+  }
+  
+  .social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes moveImage {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(50px); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes slideText {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes explode {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Responsive Design (Media Queries) */
+  @media (max-width: 768px) {
+    .hero-image {
+      flex-direction: column; /* Images stacked vertically */
+    }
+  
+    .moving-image {
+      width: 200px; /* Adjust width as needed */
+    }
+  
+    .about-image img {
+      width: 200px; /* Adjust width as needed */
+    }
+  }
+  /* General Styling */
+body {
+  font-family: 'Space Mono', monospace; /* Futuristic monospace font */
+  background: radial-gradient(circle, #111, #000); /* Deep space gradient */
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease;
+  line-height: 1.6; /* Improved readability */
+  text-align: center; /* Center-aligned text */
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif; /* Bold, futuristic headings */
+  text-align: center;
+  margin: 2rem 0;
+  text-shadow: 0 0 10px #0ff; /* Subtle neon glow */
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; }
+
+/* Navigation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Press Start 2P', monospace; /* Futuristic pixel font */
+  font-size: 2.5rem;
+  color: #ff0000; /* Red, like a warning */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff8000; /* Intense red glow with orange */
+}
+
+.symbol {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0ff; /* Neon green on hover */
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 0;
+}
+
+.hero-bouncing.text h1 {
+  animation: bounce 1s linear infinite;
+  font-size: 3.5rem;
+}
+
+.hero-image {
+  display: flex; /* Use flexbox for easy spacing */
+  justify-content: space-between; /* Space images evenly */
+  width: 100%; /* Full width */
+  margin-top: 2rem;
+}
+
+.moving-image {
+  animation: moveImage 5s linear infinite; /* Adjust duration and timing as needed */
+  width: 300px;
+  height: auto;
+}
+
+.moving-image-left {
+  animation-direction: alternate-reverse; /* Move left */
+}
+
+.moving-image-right {
+  animation-direction: alternate; /* Move right */
+}
+
+/* About Section */
+.about {
+  padding: 4rem 0;
+}
+
+.sliding-text {
+  animation: slideText 3s linear infinite; /* Adjust duration and timing as needed */
+  font-size: 24px;
+  text-align: center;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about-image img {
+  animation: bounce 1s linear infinite; /* Adjust duration and timing as needed */
+  width: 300px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image a circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.6s ease; /* Smooth transition for hover effect */
+}
+
+/* Resume Section */
+.resume {
+  padding: 4rem 0;
+}
+
+.resume-folder {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.resume-item {
+  cursor: pointer; /* Make the items clickable */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.resume-item:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle hover effect */
+}
+
+.resume-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resume-details {
+  display: none; /* Initially hide the details */
+  /* ... other styles ... */
+}
+
+.resume-item:hover .resume-details {
+  display: block; /* Reveal on hover */
+  /* ... other styles ... */
+}
+
+/* Contact Section */
+.contact {
+  background: linear-gradient(to bottom, #111, #000); /* Deep space gradient */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.contact h2 {
+  font-family: 'Orbitron', sans-serif; /* Bold, futuristic heading */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #0ff; /* Subtle neon glow */
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact label {
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact input,
+.contact textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.contact button {
+  background-color: #0ff; /* Futuristic neon green */
+  color: #181818;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+}
+
+.contact button:hover {
+  background-color: #0f0; /* Darker green on hover */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0ff; /* Neon green */
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.social-icons a:hover {
+  background-color: #0f0; /* Darker green on hover */
+}
+
+.social-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  font-family: 'Space Mono', monospace;
+}
+
+/* General Styling */
+body {
+  font-family: 'Space Mono', monospace; /* Futuristic monospace font */
+  background: radial-gradient(circle, #111, #000); /* Deep space gradient */
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease;
+  line-height: 1.6; /* Improved readability */
+  text-align: center; /* Center-aligned text */
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif; /* Bold, futuristic headings */
+  text-align: center;
+  margin: 2rem 0;
+  text-shadow: 0 0 10px #0ff; /* Subtle neon glow */
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; }
+
+/* Navigation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Press Start 2P', monospace; /* Futuristic pixel font */
+  font-size: 2.5rem;
+  color: #ff0000; /* Red, like a warning */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff8000; /* Intense red glow with orange */
+}
+
+.symbol {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0ff; /* Neon green on hover */
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 0;
+}
+
+.hero-bouncing.text h1 {
+  animation: bounce 1s linear infinite;
+  font-size: 3.5rem;
+}
+
+.hero-image {
+  display: flex; /* Use flexbox for easy spacing */
+  justify-content: space-between; /* Space images evenly */
+  width: 100%; /* Full width */
+  margin-top: 2rem;
+}
+
+.moving-image {
+  animation: moveImage 5s linear infinite; /* Adjust duration and timing as needed */
+  width: 300px;
+  height: auto;
+}
+
+.moving-image-left {
+  animation-direction: alternate-reverse; /* Move left */
+}
+
+.moving-image-right {
+  animation-direction: alternate; /* Move right */
+}
+
+/* About Section */
+.about {
+  padding: 4rem 0;
+}
+
+.sliding-text {
+  animation: slideText 3s linear infinite; /* Adjust duration and timing as needed */
+  font-size: 24px;
+  text-align: center;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about-image img {
+  animation: bounce 1s linear infinite; /* Adjust duration and timing as needed */
+  width: 300px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image a circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.6s ease; /* Smooth transition for hover effect */
+}
+
+/* Resume Section */
+.resume {
+  padding: 4rem 0;
+}
+
+.resume-folder {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.resume-item {
+  cursor: pointer; /* Make the items clickable */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.resume-item:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle hover effect */
+}
+
+.resume-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resume-details {
+  display: none; /* Initially hide the details */
+  /* ... other styles ... */
+}
+
+.resume-item:hover .resume-details {
+  display: block; /* Reveal on hover */
+  /* ... other styles ... */
+}
+
+/* Contact Section */
+.contact {
+  background: linear-gradient(to bottom, #111, #000); /* Deep space gradient */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.contact h2 {
+  font-family: 'Orbitron', sans-serif; /* Bold, futuristic heading */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #0ff; /* Subtle neon glow */
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact label {
+  font-weight: 600;
+  color: #fff;
+}
+
+.contact input,
+.contact textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.contact button {
+  background-color: #0ff; /* Futuristic neon green */
+  color: #181818;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+}
+
+.contact button:hover {
+  background-color: #0f0; /* Darker green on hover */
+}
+
+/* Footer Styling */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0ff; /* Neon green */
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.social-icons a:hover {
+  background-color: #0f0; /* Darker green on hover */
+}
+
+.social-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  font-family: 'Space Mono', monospace;
+}
+
+/* Animations */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes moveImage {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(50px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes slideText {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes explode {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+  .hero-image {
+    flex-direction: column; /* Images stacked vertically */
+  }
+
+  .moving-image {
+    width: 200px; /* Adjust width as needed */
+  }
+
+  .about-image img {
+    width: 200px; /* Adjust width as needed */
+  }
+
+  .resume-details {
+    width: 90%; /* Adjust width for smaller screens */
+    left: 5%; /* Center on smaller screens */
+  }
+}
+.logo {
+  position: relative; /* Position the logo */
+  display: inline-block; /* Make it inline-block for better control */
+  font-family: 'Press Start 2P', monospace; /* Futuristic pixel font */
+  font-size: 2.5rem;
+  color: #ff0000; /* Red, like a warning */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff8000; /* Intense red glow with orange */
+  animation: explode 1s linear infinite alternate; /* Exploding animation */
+  transition: transform 0.5s ease; /* Smooth transition for the pop-out effect */
+  cursor: pointer; /* Make it clickable */
+}
+
+.logo:hover {
+  transform: scale(1.2); /* Increase size on hover */
+}
+
+.symbol {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+@keyframes explode {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Optional: Add a slight bounce effect on hover */
+.logo:hover {
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+/* General Styling */
+body {
+  font-family: 'Space Mono', monospace; /* Futuristic monospace font */
+  background: radial-gradient(circle, #111, #000); /* Deep space gradient */
+  color: #fff;
+  margin: 0;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease;
+  line-height: 1.6; /* Improved readability */
+  text-align: center; /* Center-aligned text */
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif; /* Bold, futuristic headings */
+  text-align: center;
+  margin: 2rem 0;
+  text-shadow: 0 0 10px #0ff; /* Subtle neon glow */
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; }
+
+/* Navigation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Press Start 2P', monospace; /* Futuristic pixel font */
+  font-size: 2.5rem;
+  color: #ff0000; /* Red, like a warning */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff8000; /* Intense red glow with orange */
+  animation: explode 1s linear infinite alternate; /* Exploding animation */
+  transition: transform 0.5s ease; /* Smooth transition for the pop-out effect */
+  cursor: pointer; /* Make it clickable */
+}
+
+.logo:hover {
+  transform: scale(1.2); /* Increase size on hover */
+}
+
+.symbol {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0ff; /* Neon green on hover */
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 0;
+}
+
+.hero-bouncing.text h1 {
+  animation: bounce 1s linear infinite;
+  font-size: 3.5rem;
+}
+
+.hero-image {
+  display: flex; /* Use flexbox for easy spacing */
+  justify-content: space-between; /* Space images evenly */
+  width: 100%; /* Full width */
+  margin-top: 2rem;
+}
+
+.moving-image {
+  animation: moveImage 5s linear infinite; /* Adjust duration and timing as needed */
+  width: 300px;
+  height: auto;
+}
+
+.moving-image-left {
+  animation-direction: alternate-reverse; /* Move left */
+}
+
+.moving-image-right {
+  animation-direction: alternate; /* Move right */
+}
+
+/* About Section */
+.about {
+  padding: 4rem 0;
+}
+
+.sliding-text {
+  animation: slideText 3s linear infinite; /* Adjust duration and timing as needed */
+  font-size: 24px;
+  text-align: center;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.about-image img {
+  animation: bounce 1s linear infinite; /* Adjust duration and timing as needed */
+  width: 300px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image a circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.6s ease; /* Smooth transition for hover effect */
+}
+
+/* Resume Section */
+.resume {
+  padding: 4rem 0;
+}
+
+.resume-folder {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.resume-item {
+  cursor: pointer; /* Make the items clickable */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.resume-item:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle hover effect */
+}
+
+.resume-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resume-details {
+  display: none; /* Initially hide the details */
+  /* ... other styles ... */
+}
+
+.resume-item:hover .resume-details {
+  display: block; /* Reveal on hover */
+  /* ... other styles ... */
+}
+
+/* Contact Section */
+.contact {
+  background: linear-gradient(to bottom, #111, #000); /* Deep space gradient */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+h2.contact-me { /* Target the specific h2 element */
+  font-family: 'Orbitron', sans-serif; /* Bold, futuristic heading */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #0ff; /* Subtle neon glow */
+  position: relative; /* For absolute positioning of the eye */
+  animation: bounce 1s linear infinite alternate; /* Add the bounce animation */
+}
+
+h2.contact-me::before, 
+h2.contact-me::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* Make it a circle */
+  background-color: #fff; /* White color for the eye */
+}
+
+h2.contact-me::before {
+  left: 40%; /* Position the left eye */
+}
+
+h2.contact-me::after {
+  right: 40%; /* Position the right eye */
+}
+
+h2.contact-me::before,
+h2.contact-me::after {
+  animation: blink 1s linear infinite alternate; /* Add a blinking animation */
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; } /* Make the eyes fade out slightly */
+  100% { opacity: 1; }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); } /* Adjust bounce height as needed */
+  100% { transform: translateY(0); }
+}
+
+/* Footer Styling */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0ff; /* Neon green */
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+.social-icons a:hover {
+  background-color: #0f0; /* Darker green on hover */
+}
+
+.social-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  font-family: 'Space Mono', monospace;
+}
+
+/* Animations */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes moveImage {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(50px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes slideText {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(100px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes explode {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+  .hero-image {
+    flex-direction: column; /* Images stacked vertically */
+  }
+
+  .moving-image {
+    width: 200px; /* Adjust width as needed */
+  }
+
+  .about-image img {
+    width: 200px; /* Adjust width as needed */
+  }
+
+  .resume-details {
+    width: 90%; /* Adjust width for smaller screens */
+    left: 5%; /* Center on smaller screens */
+  }
+}
